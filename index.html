@@ -3,19 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily focus</title>
+  <title>Mohammad Honarvar — Today</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main>
-    <h1>Daily focus</h1>
-    <p>Three tasks are enough for one day. Finish these before you add anything else.</p>
-    <ol>
-      <li>Write the one outcome that would make today useful, in a single sentence.</li>
-      <li>Spend forty uninterrupted minutes on that outcome before you open email.</li>
-      <li>At the end of the day, note what is finished and what waits until tomorrow.</li>
-    </ol>
-    <p>Keep the board short. A finished list of three beats a long list you only reread.</p>
+    <p class="name">Mohammad Honarvar</p>
+    <h1>Today on the landing page</h1>
+    <p>I design bilingual landing pages. These are the three pieces of that work I will finish before I start anything else. <span lang="fa" dir="rtl">امروز فقط همین سه کار.</span></p>
+    <ul class="tasks">
+      <li>
+        <label>
+          <input type="checkbox" data-id="first-screen">
+          <span>Settle the first screen so the headline, one supporting sentence, and the main button are all visible without scrolling.</span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" data-id="type">
+          <span>Set the type so the English headline and the Persian line share one measure and do not compete for attention.</span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" data-id="responsive">
+          <span>Open the page at a phone width and fix the one place where the button or the Persian line wraps badly.</span>
+        </label>
+      </li>
+    </ul>
+    <p class="note">A check stays in this browser until you clear the site data.</p>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>

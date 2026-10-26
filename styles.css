@@ -3,30 +3,80 @@ body {
   background: #f3f0e8;
   color: #243028;
   font-family: Georgia, "Palatino Linotype", Palatino, serif;
-  line-height: 1.55;
+  font-size: 1.0625rem;
+  line-height: 1.6;
 }
 
 main {
-  max-width: 38rem;
-  margin: 3.5rem auto;
-  padding: 0 1.25rem 3rem;
+  max-width: 36rem;
+  margin: 3.75rem auto 0;
+  padding: 0 1.35rem 4rem;
+}
+
+.name {
+  margin: 0 0 0.4rem;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5e6a62;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: normal;
-  margin: 0 0 0.75rem;
+  line-height: 1.2;
+  margin: 0 0 0.85rem;
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 1.15rem;
 }
 
-ol {
-  margin: 0 0 1.25rem;
-  padding-left: 1.25rem;
+.tasks {
+  list-style: none;
+  margin: 0.4rem 0 1.4rem;
+  padding: 0;
 }
 
-li {
-  margin: 0.55rem 0;
+.tasks li {
+  margin: 0;
+  border-top: 1px solid #ddd4c6;
+}
+
+.tasks li:last-child {
+  border-bottom: 1px solid #ddd4c6;
+}
+
+.tasks label {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  padding: 0.9rem 0.1rem;
+  cursor: pointer;
+}
+
+.tasks input {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.35rem 0 0;
+  flex: none;
+  accent-color: #3c5246;
+}
+
+.tasks li.done span {
+  color: #6d756f;
+  text-decoration: line-through;
+  text-decoration-color: #b7b1a4;
+}
+
+.note {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: #5e6a62;
+}
+
+[lang="fa"] {
+  font-family: Tahoma, "Segoe UI", sans-serif;
 }
