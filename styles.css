@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background: #f3f0e8;
+  color: #243028;
+  font-family: Georgia, "Palatino Linotype", Palatino, serif;
+  line-height: 1.55;
+}
+
+main {
+  max-width: 38rem;
+  margin: 3.5rem auto;
+  padding: 0 1.25rem 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 0.75rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+
+li {
+  margin: 0.55rem 0;
+}
