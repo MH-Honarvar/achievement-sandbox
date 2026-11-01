@@ -1,1 +1,5 @@
+# Focus note 053
+
 The script sets the date when the page opens.
+
+This note belongs to the daily landing-page board in this repository. It describes one decision on that page: the three tasks, the type, the date, or the phone check. It is not a separate project.
