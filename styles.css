@@ -80,3 +80,9 @@ p {
 [lang="fa"] {
   font-family: Tahoma, "Segoe UI", sans-serif;
 }
+.date {
+  margin: -0.35rem 0 1rem;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 0.875rem;
+  color: #5e6a62;
+}
