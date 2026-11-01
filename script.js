@@ -1,4 +1,12 @@
 (function () {
+  var today = document.getElementById("today");
+  if (today) {
+    today.textContent = new Date().toLocaleDateString("en-GB", {
+      weekday: "long",
+      day: "numeric",
+      month: "long"
+    });
+  }
   var storageKey = "honarvar-today-board";
   var boxes = document.querySelectorAll(".tasks input[type='checkbox']");
   var saved = {};
