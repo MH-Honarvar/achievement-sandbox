@@ -50,10 +50,17 @@ p {
 
 .tasks label {
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
   gap: 0.8rem;
   align-items: flex-start;
+  min-height: 2.75rem;
   padding: 0.9rem 0.1rem;
   cursor: pointer;
+}
+
+.tasks label span {
+  flex: 1 1 auto;
 }
 
 .tasks input {
@@ -80,9 +87,45 @@ p {
 [lang="fa"] {
   font-family: Tahoma, "Segoe UI", sans-serif;
 }
+
+span[lang="fa"] {
+  word-break: keep-all;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
 .date {
   margin: -0.35rem 0 1rem;
   font-family: "Segoe UI", system-ui, sans-serif;
   font-size: 0.875rem;
   color: #5e6a62;
+}
+
+@media (max-width: 40rem) {
+  main {
+    padding-left: max(1.35rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1.35rem, env(safe-area-inset-right, 0px));
+  }
+}
+
+@media (min-width: 64rem) {
+  main {
+    margin-top: 1.25rem;
+  }
+
+  h1 {
+    margin-bottom: 0.4rem;
+  }
+
+  .date {
+    margin-bottom: 0.45rem;
+  }
+
+  main > p:not(.name):not(.date):not(.note) {
+    margin-bottom: 0.65rem;
+  }
+
+  .tasks {
+    margin-top: 0;
+  }
 }
